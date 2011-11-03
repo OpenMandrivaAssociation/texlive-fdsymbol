@@ -1,3 +1,9 @@
+# revision 23797
+# category Package
+# catalog-ctan /fonts/fdsymbol
+# catalog-date 2011-08-30 14:04:46 +0200
+# catalog-license lppl
+# catalog-version 0.7
 Name:		texlive-fdsymbol
 Version:	0.7
 Release:	1
@@ -118,6 +124,7 @@ contemporary typefaces.
 #- source
 %doc %{_texmfdistdir}/source/latex/fdsymbol/fdsymbol.dtx
 %doc %{_texmfdistdir}/source/latex/fdsymbol/fdsymbol.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -128,3 +135,5 @@ contemporary typefaces.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
