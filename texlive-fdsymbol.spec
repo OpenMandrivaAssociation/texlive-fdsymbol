@@ -1,16 +1,16 @@
-# revision 23797
+# revision 26722
 # category Package
 # catalog-ctan /fonts/fdsymbol
-# catalog-date 2011-08-30 14:04:46 +0200
-# catalog-license lppl
-# catalog-version 0.7
+# catalog-date 2012-05-29 12:56:38 +0200
+# catalog-license ofl
+# catalog-version 0.8
 Name:		texlive-fdsymbol
-Version:	0.7
-Release:	2
+Version:	0.8
+Release:	1
 Summary:	A maths symbol font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/fdsymbol
-License:	LPPL
+License:	OFL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.source.tar.xz
@@ -41,6 +41,10 @@ contemporary typefaces.
 %{_texmfdistdir}/fonts/enc/dvips/fdsymbol/fdsymbol-e.enc
 %{_texmfdistdir}/fonts/enc/dvips/fdsymbol/fdsymbol-f.enc
 %{_texmfdistdir}/fonts/map/dvips/fdsymbol/fdsymbol.map
+%{_texmfdistdir}/fonts/opentype/public/fdsymbol/FdSymbol-Bold.otf
+%{_texmfdistdir}/fonts/opentype/public/fdsymbol/FdSymbol-Book.otf
+%{_texmfdistdir}/fonts/opentype/public/fdsymbol/FdSymbol-Medium.otf
+%{_texmfdistdir}/fonts/opentype/public/fdsymbol/FdSymbol-Regular.otf
 %{_texmfdistdir}/fonts/source/public/fdsymbol/FdSymbolA-Bold.mf
 %{_texmfdistdir}/fonts/source/public/fdsymbol/FdSymbolA-Book.mf
 %{_texmfdistdir}/fonts/source/public/fdsymbol/FdSymbolA-Medium.mf
@@ -103,10 +107,30 @@ contemporary typefaces.
 %{_texmfdistdir}/fonts/tfm/public/fdsymbol/FdSymbolF-Book.tfm
 %{_texmfdistdir}/fonts/tfm/public/fdsymbol/FdSymbolF-Medium.tfm
 %{_texmfdistdir}/fonts/tfm/public/fdsymbol/FdSymbolF-Regular.tfm
-%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbol-Bold.pfb
-%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbol-Book.pfb
-%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbol-Medium.pfb
-%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbol-Regular.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolA-Bold.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolA-Book.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolA-Medium.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolA-Regular.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolB-Bold.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolB-Medium.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolB-Regular.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolC-Bold.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolC-Book.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolC-Medium.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolC-Regular.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolD-Bold.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolD-Book.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolD-Medium.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolD-Regular.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolE-Bold.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolE-Book.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolE-Medium.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolE-Regular.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolF-Bold.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolF-Book.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolF-Medium.pfb
+%{_texmfdistdir}/fonts/type1/public/fdsymbol/FdSymbolF-Regular.pfb
 %{_texmfdistdir}/tex/latex/fdsymbol/fdsymbol.sty
 %doc %{_texmfdistdir}/doc/fonts/fdsymbol/FONTLOG.txt
 %doc %{_texmfdistdir}/doc/fonts/fdsymbol/OFL.txt
