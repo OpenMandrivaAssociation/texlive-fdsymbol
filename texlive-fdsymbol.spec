@@ -6,7 +6,7 @@
 # catalog-version 0.8
 Name:		texlive-fdsymbol
 Version:	0.8
-Release:	2
+Release:	3
 Summary:	A maths symbol font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/fdsymbol
