@@ -1,19 +1,13 @@
-# revision 26722
-# category Package
-# catalog-ctan /fonts/fdsymbol
-# catalog-date 2012-05-29 12:56:38 +0200
-# catalog-license ofl
-# catalog-version 0.8
 Name:		texlive-fdsymbol
-Version:	0.8
-Release:	10
+Version:	61719
+Release:	1
 Summary:	A maths symbol font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/fdsymbol
 License:	OFL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ Fedra family by Typotheque, but it might also fit other
 contemporary typefaces.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -141,7 +135,8 @@ contemporary typefaces.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
