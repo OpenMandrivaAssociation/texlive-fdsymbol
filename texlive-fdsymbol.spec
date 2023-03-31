@@ -1,6 +1,6 @@
 Name:		texlive-fdsymbol
 Version:	61719
-Release:	1
+Release:	2
 Summary:	A maths symbol font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/fdsymbol
