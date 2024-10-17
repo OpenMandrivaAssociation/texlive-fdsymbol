@@ -3,7 +3,7 @@ Version:	61719
 Release:	2
 Summary:	A maths symbol font
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/fdsymbol
+URL:		https://www.ctan.org/tex-archive/fonts/fdsymbol
 License:	OFL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.doc.r%{version}.tar.xz
