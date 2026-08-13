@@ -1,9 +1,10 @@
 %global tl_name fdsymbol
 %global tl_revision 77682
+%global tl_version 1.0
 
 Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	1.0
+Version:	%{tl_version}
 Release:	%{tl_revision}.1
 Summary:	A maths symbol font
 Group:		Publishing
@@ -14,10 +15,18 @@ Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.doc.r%{
 Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/fdsymbol.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 FdSymbol is a maths symbol font, designed as a companion to the Fedra
 family by Typotheque, but it might also fit other contemporary
 typefaces.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from fdsymbol:
+Map fdsymbol.map
+TL_DROPIN_EOF
